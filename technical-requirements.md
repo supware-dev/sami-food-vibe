@@ -17,3 +17,5 @@
 * Use [Neon](https://neon.com)
 * Use [Playwright](https://playwright.dev)
 * Use [Development Containers](https://containers.dev)
+
+TODO: Use [AngularFire](https://github.com/angular/angularfire) once [#3699](https://github.com/angular/angularfire/issues/3699) is resolved
