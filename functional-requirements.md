@@ -1,17 +1,18 @@
 # Functional Requirements
 
-* Admin Pages (With Authentication Guard) (POS, Inventory, Accounting, Shifts, ...)
-* Admin Side Orders
+## Management Pages (With Authentication Guard)
+* (Users) Roles
+* Orders (Past, Live)
 * Analysis (By Period) (Orders Count, Revenue)
-* Admin Side Review and Feedback
-* Admin Side Order History
+* (Order) Review
+* Menu
+* Hours
 
 A Customer Has Name and Phone Number and Addresses
-Menu Availability Management (Manual At Ingredient/Product Level, Or Inferred From Inventory)
-Menu Management
+
 A Rating/Review/Feedback Has Custumer, and DateTime and Message
 
-* Customers Pages
+## Customers Pages
 
 Order Has an Id and Items
 * Products (Estimated Preparation Time, Prices)
@@ -31,7 +32,3 @@ Order Has an Id and Items
 Livreur Section
 
 Notification (...)
-
-Opening Times Aware Ordering
-
-Ingredients Availability Management
