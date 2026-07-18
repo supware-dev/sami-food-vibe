@@ -13,17 +13,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: subosito/flutter-action@v2
         with:
-          node-version: 22
-          cache: npm
-          cache-dependency-path: web-app/package-lock.json
+          channel: stable
       - name: Install dependencies
-        run: npm ci
-        working-directory: web-app
-      - name: Build Angular app
-        run: npm run build
-        working-directory: web-app
+        run: flutter pub get
+        working-directory: customer_app
+      - name: Build Flutter web app
+        run: flutter build web --release
+        working-directory: customer_app
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}

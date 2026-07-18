@@ -1,6 +1,8 @@
 # Functional Requirements
 
-## Management App (With Authentication Guard)
+## Manager App
+
+Authentication
 
 Language: English
 
@@ -17,7 +19,7 @@ A Rating/Review/Feedback Has Custumer, and DateTime and Message
 
 End to End Tests
 
-## Customers App
+## Customer App
 
 Use [Google Maps for Flutter](https://pub.dev/packages/google_maps_flutter)
 
@@ -48,13 +50,17 @@ Delivery Costs 500 Millimes
 
 End to End Tests
 
-## Workers App
+## Cook App
+
+Authentication
 
 Language: English
 
 End to End Tests
 
-## Delivery App
+## Deliverer App
+
+Authentication
 
 Use [Google Navigation for Flutter](https://pub.dev/packages/google_navigation_flutter)
 
