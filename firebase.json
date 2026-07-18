@@ -25,7 +25,6 @@
   ],
   "hosting": {
     "source": "./customer_app",
-    "site": "sami-food-5c155-a18c5",
     "ignore": [
       "firebase.json",
       "**/.*",
