@@ -19,3 +19,5 @@
 * Use [Development Containers](https://containers.dev)
 
 TODO: Use [AngularFire](https://github.com/angular/angularfire) once [#3699](https://github.com/angular/angularfire/issues/3699) is resolved
+
+TODO: Use [Google Maps Platform Code Assist toolkit](https://developers.google.com/maps/ai/code-assist)

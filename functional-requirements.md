@@ -1,6 +1,9 @@
 # Functional Requirements
 
-## Management Pages (With Authentication Guard)
+## Management App (With Authentication Guard)
+
+Language: English
+
 * (Users) Roles
 * Orders (Past, Live)
 * Analysis (By Period) (Orders Count, Revenue)
@@ -12,7 +15,17 @@ A Customer Has Name and Phone Number and Addresses
 
 A Rating/Review/Feedback Has Custumer, and DateTime and Message
 
-## Customers Pages
+End to End Tests
+
+## Customers App
+
+Use [Google Maps for Flutter](https://pub.dev/packages/google_maps_flutter)
+
+Supported Languages: Arabic, English, and French
+
+Select Language on start
+
+Setting to change language
 
 Order Has an Id and Items
 * Products (Estimated Preparation Time, Prices)
@@ -28,7 +41,27 @@ Order Has an Id and Items
 * Feedback (Post-Order) (Like/Dislike, Predefined Comments, Comment)
 * Profile Page (To Set Name and Phone Number)
 
+Options:
+Delivery, When Checked, Show 2 Options (To Location (Prompt For Location Access), To A Specific Address (When Selected, Show Map Picker))
 
-Livreur Section
+End to End Tests
+
+## Workers App
+
+Language: English
+
+End to End Tests
+
+## Delivery App
+
+Use [Google Navigation for Flutter](https://pub.dev/packages/google_navigation_flutter)
+
+Language: English
+
+Show Map with Markers where orders, their selection is synced with a list, an can mark item as done
+
+No Navigation Stuff, It's A Local Business.
 
 Notification (...)
+
+End to End Tests

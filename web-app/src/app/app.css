@@ -1,0 +1,278 @@
+/* ========================================
+   Sami Food - Coming Soon Landing Page
+   ======================================== */
+
+:host {
+  display: block;
+  min-height: 100dvh;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- Background ---- */
+.landing {
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #0a1628 0%, #132244 40%, #1a3066 70%, #0d1f3d 100%);
+  overflow: hidden;
+  padding: 2rem 1rem;
+}
+
+/* ---- Floating Particles ---- */
+.bg-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.12;
+  animation: float 12s ease-in-out infinite;
+}
+
+.particle-1 {
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, #3b6dd1, transparent 70%);
+  top: -80px;
+  right: -60px;
+  animation-duration: 14s;
+}
+
+.particle-2 {
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle, #f0c040, transparent 70%);
+  bottom: -40px;
+  left: -40px;
+  animation-duration: 18s;
+  animation-delay: -4s;
+}
+
+.particle-3 {
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle, #e86040, transparent 70%);
+  top: 40%;
+  left: 10%;
+  animation-duration: 16s;
+  animation-delay: -8s;
+}
+
+.particle-4 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #4090e0, transparent 70%);
+  top: 20%;
+  right: 15%;
+  animation-duration: 20s;
+  animation-delay: -2s;
+}
+
+.particle-5 {
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, #c8a030, transparent 70%);
+  bottom: 20%;
+  right: 30%;
+  animation-duration: 15s;
+  animation-delay: -6s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-30px) scale(1.05);
+  }
+}
+
+/* ---- Hero Card ---- */
+.hero-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  padding: 3.5rem 3rem 3rem;
+  max-width: 520px;
+  width: 100%;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  animation: cardEntry 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes cardEntry {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ---- Logo ---- */
+.logo-container {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.2),
+    0 0 0 4px rgba(255, 255, 255, 0.1);
+  animation: logoPulse 3s ease-in-out infinite;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+}
+
+@keyframes logoPulse {
+  0%, 100% {
+    box-shadow:
+      0 4px 20px rgba(0, 0, 0, 0.2),
+      0 0 0 4px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow:
+      0 4px 30px rgba(59, 109, 209, 0.3),
+      0 0 0 8px rgba(255, 255, 255, 0.06);
+  }
+}
+
+/* ---- Divider ---- */
+.divider-line {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 2rem 0 1.5rem;
+  width: 100%;
+  max-width: 280px;
+}
+
+.divider-bar {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+}
+
+.divider-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(240, 192, 64, 0.7);
+}
+
+/* ---- Typography ---- */
+.headline {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.75rem;
+  line-height: 1.2;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.subtext {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.65;
+  margin: 0 0 2rem;
+  max-width: 380px;
+}
+
+/* ---- Badge / CTA ---- */
+.cta-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, rgba(240, 192, 64, 0.15), rgba(240, 192, 64, 0.05));
+  border: 1px solid rgba(240, 192, 64, 0.25);
+  color: #f0c848;
+  padding: 0.625rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  animation: badgeGlow 2.5s ease-in-out infinite;
+}
+
+.badge-icon {
+  font-size: 1.15rem;
+}
+
+@keyframes badgeGlow {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(240, 192, 64, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(240, 192, 64, 0.25);
+  }
+}
+
+/* ---- Footer ---- */
+.footer {
+  position: relative;
+  z-index: 1;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.3);
+  margin: 0;
+}
+
+/* ---- Responsive ---- */
+@media screen and (max-width: 480px) {
+  .hero-card {
+    padding: 2.5rem 1.5rem 2rem;
+    border-radius: 1.5rem;
+  }
+
+  .logo-container {
+    width: 170px;
+    height: 170px;
+  }
+
+  .headline {
+    font-size: 1.6rem;
+  }
+
+  .subtext {
+    font-size: 0.9rem;
+  }
+}
