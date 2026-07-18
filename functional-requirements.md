@@ -44,6 +44,8 @@ Order Has an Id and Items
 Options:
 Delivery, When Checked, Show 2 Options (To Location (Prompt For Location Access), To A Specific Address (When Selected, Show Map Picker))
 
+Delivery Costs 500 Millimes
+
 End to End Tests
 
 ## Workers App
