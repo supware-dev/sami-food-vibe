@@ -14,12 +14,8 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
-      - name: Install dependencies
-        run: flutter pub get
-        working-directory: customer_app
-      - name: Build Flutter web app
-        run: flutter build web --release
-        working-directory: customer_app
+      - name: Enable Firebase web frameworks experiment
+        run: npx -y firebase-tools@latest experiments:enable webframeworks
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
