@@ -17,7 +17,9 @@ const app = initializeApp({
   measurementId: "G-NQL0W628T4"
 });
 
-const _ = getAnalytics(app);
+if (typeof window !== 'undefined') {
+  const analytics = getAnalytics(app);
+}
 
 export const appConfig: ApplicationConfig = {
   providers: [
